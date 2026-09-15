@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+}
+
+
+.profile-card {
+    background-color: white;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+    overflow: hidden; 
+}
+
+
+.card-header {
+    background-color: #2c3e50; 
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+.invisible-table {
+    width: 100%;
+    border-collapse: collapse; 
+    border: none; 
+    text-align: center; 
+}
+
+.invisible-table td {
+    border: none; 
+    padding: 10px; 
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 3px solid #bdc3c7; 
+}
+
+.login-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    padding-bottom: 0 !important; 
+}
+.description {
+    color: #7f8c8d;
+    font-size: 16px;
+    padding-top: 5px !important;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px; 
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+.contact-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px; 
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #2980b9;
+}
