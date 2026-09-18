@@ -1,0 +1,111 @@
+﻿html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 75px;
+    background-color: #f8f9fa;
+}
+
+.custom-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('image-taboonp/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section {
+    min-height: 50vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.profile-img {
+    width: 300px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover !important;
+    object-position: center 15%;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.home-card {
+    transition: transform 0.3s;
+}
+
+.home-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.icon-hover {
+    transition: transform 0.2s ease-in-out;
+}
+
+.icon-hover:hover {
+    transform: scale(1.2);
+}
+
+
+.bg-pink {
+    background: linear-gradient(135deg, #ff7eb3 0%, #ff758c 100%) !important;
+}
+
+.text-pink {
+    color: #ff758c !important;
+}
+
+.border-pink {
+    border-color: #ff758c !important;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 16px !important;
+    margin: 0 5px;
+    border: 1px solid transparent;
+    border-radius: 8px; 
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, 
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-color: rgba(255, 255, 255, 0.6); 
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+
+.navbar-brand:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: #ffffff !important;
+}
+
+
+.fade-element {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
